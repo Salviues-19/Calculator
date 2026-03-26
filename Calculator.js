@@ -18,7 +18,14 @@ if(operator === "+"){
         alert("Anything divided by zero is zero")
     }
     return a/b;
-}else{
+}
+else if(operator === "%"){
+    if(b===0){
+        alert("cannot take modulus by zero")
+    }
+    return a%b;
+}
+else{
     return "invalid operator"
 }
 }
