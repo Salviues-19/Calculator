@@ -22,6 +22,7 @@ if(operator === "+"){
 else if(operator === "%"){
     if(b===0){
         alert("cannot take modulus by zero")
+        return
     }
     return a%b;
 }
@@ -30,4 +31,4 @@ else{
 }
 }
 let result = Calculator(num1,num2,operator)
-(alert("The result of "+ num1+" "+operator+num2+" ="+result))
+alert("The result of "+ num1+" "+operator+num2+" ="+result)
